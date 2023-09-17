@@ -1,0 +1,38 @@
+price = 0
+discount = 0
+total_price = 0
+total = 0
+room_type = input("Room type:\n")
+stay = int(input("How many nights?\n"))
+if room_type == "room for one person":
+  price = 18.00
+  total = price * stay
+elif room_type == "apartment":
+  price = 25.00
+  if stay < 10:
+    prediscount = float(price * stay)
+    discount = (price * 0.3) * stay
+    total = prediscount - discount
+  if stay >= 10 <= 15:
+    prediscount = float(price * stay)
+    discount = (price * 0.35) * stay
+    total = prediscount - discount
+  if stay > 15:
+    prediscount = float(price * stay)
+    discount = (price * 0.5) * stay
+    total = prediscount - discount
+elif room_type == "president apartment":
+  price = 105.00
+  if stay < 10:
+    prediscount = float(price * stay)
+    discount = (price * 0.05) * stay
+    total = prediscount - discount
+  if stay >= 10 <= 15:
+    prediscount = float(price * stay)
+    discount = (price * 0.10) * stay
+    total = prediscount - discount
+  if stay > 15:
+    prediscount = float(price * stay)
+    discount = (price * 0.15) * stay
+    total = prediscount - discount
+print(total)
