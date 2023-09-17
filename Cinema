@@ -1,0 +1,56 @@
+movie = input("Please choose a movie from the list:\n'1'\n'2'\n'3'\n")
+kids_tickets = 0
+tickets_count = 0
+adults_price = 0
+kids_tickets_price = adults_price * 0.2
+kids_tickets_count = 0
+total = 0
+tickets_count = tickets_count + kids_tickets_count
+#Movie 1
+if movie == "1":
+  adults_price = 7.50
+  tickets_count = int(input("Tickets_count"))
+  kids_tickets = input("Do you want to buy a child ticket?\n")
+  if kids_tickets == "yes":
+    kids_tickets_count = int(input("Tickets count:\n"))
+    kids_tickets_price = adults_price * 0.2
+  else:
+    total = (adults_price * tickets_count) + (kids_tickets_count * kids_tickets_price)
+  if kids_tickets == "no":
+    total = (adults_price * tickets_count) + (kids_tickets_count * kids_tickets_price)
+    print(f"Your total for {tickets_count} adults tickets is {total} $")
+  elif kids_tickets == "yes":
+    total = (adults_price * tickets_count) + (kids_tickets_count * kids_tickets_price)
+    print(f"Your total for {tickets_count} adults tickets and {kids_tickets_count} tickets for kids is {total} $")
+#Movie 2 
+if movie == "2":
+  adults_price = 13.50
+  tickets_count = int(input("Tickets_count"))
+  kids_tickets = input("Do you want to buy a child ticket?\n")
+  if kids_tickets == "yes":
+    kids_tickets_count = int(input("Tickets count:\n"))
+    kids_tickets_price = adults_price * 0.2
+  else:
+    total = (adults_price * tickets_count) + (kids_tickets_count * kids_tickets_price)
+  if kids_tickets == "no":
+    total = (adults_price * tickets_count) + (kids_tickets_count * kids_tickets_price)
+    print(f"Your total for {tickets_count} adults tickets is {total} $")
+  elif kids_tickets == "yes":
+    total = (adults_price * tickets_count) + (kids_tickets_count * kids_tickets_price)
+    print(f"Your total for {tickets_count} adults tickets and {kids_tickets_count} tickets for kids is {total} $")
+#Movie 3 
+if movie == "3":
+  adults_price = 9
+  tickets_count = int(input("Tickets_count"))
+  kids_tickets = input("Do you want to buy a child ticket?\n")
+  if kids_tickets == "yes":
+    kids_tickets_count = int(input("Tickets count:\n"))
+    kids_tickets_price = adults_price * 0.2
+  else:
+    total = (adults_price * tickets_count) + (kids_tickets_count * kids_tickets_price)
+  if kids_tickets == "no":
+    total = (adults_price * tickets_count) + (kids_tickets_count * kids_tickets_price)
+    print(f"Your total for {tickets_count} adults tickets is {total} $")
+  elif kids_tickets == "yes":
+    total = (adults_price * tickets_count) + (kids_tickets_count * kids_tickets_price)
+    print(f"Your total for {tickets_count} adults tickets and {kids_tickets_count} tickets for kids is {total} $")
